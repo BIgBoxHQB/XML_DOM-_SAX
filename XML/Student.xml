@@ -1,0 +1,17 @@
+<Students>
+    <student>
+        <name>章三</name>
+        <age>18</age>
+        <gender>男</gender>
+    </student>
+    <student>
+        <name>李四</name>
+        <age>19</age>
+        <gender>男</gender>
+    </student>
+    <student>
+        <name>王五</name>
+        <age>21</age>
+        <gender>女</gender>
+    </student>
+</Students>

@@ -15,6 +15,10 @@
 		473C6E2D1D7E586E00FCB344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473C6E2B1D7E586E00FCB344 /* LaunchScreen.storyboard */; };
 		473C6E381D7E586E00FCB344 /* XMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 473C6E371D7E586E00FCB344 /* XMLTests.m */; };
 		473C6E431D7E586E00FCB344 /* XMLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 473C6E421D7E586E00FCB344 /* XMLUITests.m */; };
+		473C6E511D7E58AC00FCB344 /* Student.xml in Resources */ = {isa = PBXBuildFile; fileRef = 473C6E501D7E58AC00FCB344 /* Student.xml */; };
+		47F590901D7E5F3F004174EB /* HQB_StudentMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F5908F1D7E5F3F004174EB /* HQB_StudentMod.m */; };
+		47F590931D7E641F004174EB /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F590921D7E641F004174EB /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		47F590951D7E6497004174EB /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F590941D7E6497004174EB /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		473C6E3E1D7E586E00FCB344 /* XMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		473C6E421D7E586E00FCB344 /* XMLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLUITests.m; sourceTree = "<group>"; };
 		473C6E441D7E586E00FCB344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473C6E501D7E58AC00FCB344 /* Student.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Student.xml; sourceTree = "<group>"; };
+		47F5908E1D7E5F3F004174EB /* HQB_StudentMod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQB_StudentMod.h; sourceTree = "<group>"; };
+		47F5908F1D7E5F3F004174EB /* HQB_StudentMod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQB_StudentMod.m; sourceTree = "<group>"; };
+		47F590911D7E641F004174EB /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		47F590921D7E641F004174EB /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		47F590941D7E6497004174EB /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F590951D7E6497004174EB /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 		473C6E111D7E586D00FCB344 = {
 			isa = PBXGroup;
 			children = (
+				47F590941D7E6497004174EB /* libxml2.tbd */,
 				473C6E1C1D7E586E00FCB344 /* XML */,
 				473C6E361D7E586E00FCB344 /* XMLTests */,
 				473C6E411D7E586E00FCB344 /* XMLUITests */,
@@ -101,10 +113,15 @@
 		473C6E1C1D7E586E00FCB344 /* XML */ = {
 			isa = PBXGroup;
 			children = (
+				47F590911D7E641F004174EB /* GDataXMLNode.h */,
+				47F590921D7E641F004174EB /* GDataXMLNode.m */,
 				473C6E201D7E586E00FCB344 /* AppDelegate.h */,
 				473C6E211D7E586E00FCB344 /* AppDelegate.m */,
 				473C6E231D7E586E00FCB344 /* ViewController.h */,
 				473C6E241D7E586E00FCB344 /* ViewController.m */,
+				47F5908E1D7E5F3F004174EB /* HQB_StudentMod.h */,
+				47F5908F1D7E5F3F004174EB /* HQB_StudentMod.m */,
+				473C6E501D7E58AC00FCB344 /* Student.xml */,
 				473C6E261D7E586E00FCB344 /* Main.storyboard */,
 				473C6E291D7E586E00FCB344 /* Assets.xcassets */,
 				473C6E2B1D7E586E00FCB344 /* LaunchScreen.storyboard */,
@@ -202,6 +219,7 @@
 		473C6E121D7E586D00FCB344 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HQB_;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = HuangQibo;
 				TargetAttributes = {
@@ -244,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				473C6E2D1D7E586E00FCB344 /* LaunchScreen.storyboard in Resources */,
+				473C6E511D7E58AC00FCB344 /* Student.xml in Resources */,
 				473C6E2A1D7E586E00FCB344 /* Assets.xcassets in Resources */,
 				473C6E281D7E586E00FCB344 /* Main.storyboard in Resources */,
 			);
@@ -270,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F590901D7E5F3F004174EB /* HQB_StudentMod.m in Sources */,
 				473C6E251D7E586E00FCB344 /* ViewController.m in Sources */,
+				47F590931D7E641F004174EB /* GDataXMLNode.m in Sources */,
 				473C6E221D7E586E00FCB344 /* AppDelegate.m in Sources */,
 				473C6E1F1D7E586E00FCB344 /* main.m in Sources */,
 			);
@@ -415,8 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = XML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = BigBox.XML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -426,8 +450,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = XML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = BigBox.XML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,6 +525,7 @@
 				473C6E491D7E586E00FCB344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		473C6E4A1D7E586E00FCB344 /* Build configuration list for PBXNativeTarget "XMLTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +534,7 @@
 				473C6E4C1D7E586E00FCB344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		473C6E4D1D7E586E00FCB344 /* Build configuration list for PBXNativeTarget "XMLUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +543,7 @@
 				473C6E4F1D7E586E00FCB344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
